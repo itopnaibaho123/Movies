@@ -17,15 +17,14 @@ function Movies(){
             {mov.map((movie, index) =>{
                 return(
                     <div className="item" key={index}>
-                        <div>
+                        <div className="imageFilm">
                             <img style={{height:'350px'}} src= {movie.Poster} alt='Avatar'></img>
                         </div>
                         <div className="titleMovies">
                             <p>{movie.Title}</p>
                         </div>                       
                     </div>
-                )
-                
+                )        
             })}
         </div>
            
